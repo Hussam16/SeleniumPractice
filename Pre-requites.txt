@@ -1,0 +1,3 @@
+How to apply parallerl execution using Testng ?
+How to apply grouping tests with testng ?
+How to pramatrize tests using testng ?
