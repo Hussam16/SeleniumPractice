@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -115,6 +116,8 @@ public class SauceLabstestCases {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
+		JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+		javascriptExecutor.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		WebElement firsNameBox = driver.findElement(By.cssSelector("input[placeholder='First Name']"));
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		firsNameBox.sendKeys("Hussam");
@@ -125,7 +128,7 @@ public class SauceLabstestCases {
 		addressbox.sendKeys("21 Emteadad Ramsis 1");
 		WebElement emailBox = driver.findElement(By.cssSelector("input[type='email']"));
 		emailBox.sendKeys("wow195@gmail.com");
-		WebElement phoneNum = driver.findElement(By.cssSelector("input[type='tel']"));
+		WebElement phoneNum = driver.findElement(By.cssSelector("input[type='tel']"));		
 		phoneNum.sendKeys("212-456-7890");
 		WebElement genderCheckBox = driver.findElement(By.cssSelector("input[value='FeMale']"));
 		wait.until(ExpectedConditions.visibilityOf(genderCheckBox));
@@ -142,4 +145,28 @@ public class SauceLabstestCases {
 
 	}
 
+	// Verify the change at the currency from Dollars to Euro's
+	@Test
+	public void NoCommerceHomePage() {
+		
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		WebDriver driver= new ChromeDriver(options);
+		driver.manage().window().maximize();
+		driver.get("https://demo.nopcommerce.com/");
+		WebElement currenDropdown=driver.findElement(By.id("customerCurrency"));
+		Select select = new Select(currenDropdown);
+		select.selectByVisibleText("Euro");
+		JavascriptExecutor jse= (JavascriptExecutor) driver;
+		jse.executeScript("scroll(0,1600)");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebElement priceTag = driver.findElement(By.xpath("(//*[contains(@class, 'price') and contains(@class, 'actual-price')])[1]"));
+		wait.until(ExpectedConditions.visibilityOf(priceTag));
+		String priceEuros = priceTag.getText();
+		Assert.assertEquals("€", Character.toString(priceEuros.charAt(0)));
+		driver.close();
+	
+	}
 }
+	

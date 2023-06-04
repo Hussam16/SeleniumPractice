@@ -5,7 +5,7 @@
     <classes>
       <class name="test.SauceLabstestCases">
         <methods>
-          <include name="demoAutomationSite"/>
+          <include name="NoCommerceHomePage"/>
         </methods>
       </class> <!-- test.SauceLabstestCases -->
     </classes>
