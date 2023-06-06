@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
@@ -144,6 +145,29 @@ public class HerkoInternetApp {
 		String filePath=System.getProperty("user.dir")+"\\Pre-requites.txt";
 		driver.findElement(By.id("file-upload")).sendKeys(filePath);
 		driver.findElement(By.id("file-submit")).click();
+		driver.close();
+
+
+	}
+	@Test
+	public void HandleFrameSwitching() {
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		// chromeOptions.addArguments("--headless");
+		driver = new ChromeDriver(chromeOptions);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().window().maximize();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+		driver.get(url);
+		driver.findElement(By.linkText("WYSIWYG Editor")).click();
+		WebElement frame = driver.findElement(By.id("mce_0_ifr"));
+		driver.switchTo().frame(frame);
+		driver.findElement(By.tagName("p")).clear();
+		driver.findElement(By.tagName("p")).sendKeys("Loreem sdasd");
+		driver.switchTo().parentFrame();
+		driver.findElement(By.xpath("(//button[@role='menuitem'])[1]")).click();
+
 		//driver.close();
 
 
