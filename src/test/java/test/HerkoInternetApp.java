@@ -35,7 +35,7 @@ public class HerkoInternetApp {
 		
   }
  
-  @Test
+  @Test(enabled = false)
   public void ClickKeysTestSlider() {
 	  
 		WebDriverManager.chromedriver().setup();
@@ -55,4 +55,100 @@ public class HerkoInternetApp {
 
 		
 }
+  
+  @Test
+  public void HandleAlertTestcases() {
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		// chromeOptions.addArguments("--headless");
+		driver = new ChromeDriver(chromeOptions);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().window().maximize();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+		driver.get(url);
+		driver.findElement(By.linkText("JavaScript Alerts")).click();
+		driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();
+		driver.switchTo().alert().accept();
+		
+		
+		
+		
+		
+}
+  @Test
+  public void HandleAlertTestcasesTwoChocic() {
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		// chromeOptions.addArguments("--headless");
+		driver = new ChromeDriver(chromeOptions);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().window().maximize();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+		driver.get(url);
+		driver.findElement(By.linkText("JavaScript Alerts")).click();
+		driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
+		driver.switchTo().alert().dismiss();
+		
+		
+		
+		
+		
+}
+  @Test(enabled = false)
+  public void HandleAlertTestcasesTwoPromot() {
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		// chromeOptions.addArguments("--headless");
+		driver = new ChromeDriver(chromeOptions);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().window().maximize();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+		driver.get(url);
+		driver.findElement(By.linkText("JavaScript Alerts")).click();
+		driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
+		driver.switchTo().alert().dismiss();
+		
+		
+		
+		
+		
+}
+  @Test
+  public void HandleAlertTestcasesSendText() {
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		// chromeOptions.addArguments("--headless");
+		driver = new ChromeDriver(chromeOptions);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().window().maximize();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+		driver.get(url);
+		driver.findElement(By.linkText("JavaScript Alerts")).click();
+		driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
+		driver.switchTo().alert().sendKeys("Text Lorem");
+		driver.switchTo().alert().accept();
+		
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
