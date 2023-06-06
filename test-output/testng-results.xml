@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-06T18:06:24 AST" name="Default suite" finished-at="2023-06-06T18:06:29 AST" duration-ms="5223">
+  <suite started-at="2023-06-06T18:43:58 AST" name="Default suite" finished-at="2023-06-06T18:44:04 AST" duration-ms="5596">
     <groups>
     </groups>
-    <test started-at="2023-06-06T18:06:24 AST" name="Default test" finished-at="2023-06-06T18:06:29 AST" duration-ms="5223">
+    <test started-at="2023-06-06T18:43:58 AST" name="Default test" finished-at="2023-06-06T18:44:04 AST" duration-ms="5596">
       <class name="test.HerkoInternetApp">
-        <test-method signature="HandleAlertTestcasesSendText()[pri:0, instance:test.HerkoInternetApp@194bcebf]" started-at="2023-06-06T18:06:24 AST" name="HandleAlertTestcasesSendText" finished-at="2023-06-06T18:06:29 AST" duration-ms="5174" status="PASS">
+        <test-method signature="HandleFileUpload()[pri:0, instance:test.HerkoInternetApp@17497425]" started-at="2023-06-06T18:43:58 AST" name="HandleFileUpload" finished-at="2023-06-06T18:44:04 AST" duration-ms="5557" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HandleAlertTestcasesSendText -->
+        </test-method> <!-- HandleFileUpload -->
       </class> <!-- test.HerkoInternetApp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
