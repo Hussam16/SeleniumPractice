@@ -8,12 +8,24 @@
 		</classes>
 	</test> <!--
 	Test -->
-	<test name="Test">
+	<test name="Test2">
 		<classes>
 
 			<class name="test.GoogleHomePagetestCases" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> 
+		<test name="Test3">
+		<classes>
+
+			<class name="test.HerkoInternetApp" />
+		</classes>
+	</test> 
+		<test name="Test4">
+		<classes>
+
+			<class name="test.OrangeHRM" />
+		</classes>
+	</test> 
+	
+</suite> 
+

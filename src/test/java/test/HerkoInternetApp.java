@@ -188,11 +188,36 @@ public class HerkoInternetApp {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//h4[text()='Hello World!']"))));
 		System.out.println(driver.findElement(By.xpath("//h4[text()='Hello World!']")).getText());
+		driver.navigate().back();
+		driver.navigate().back();
 
 
-		//driver.close();
+		driver.close();
 
 
 	}
+	
+	@Test
+	public void HandleNavgation() {
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		// chromeOptions.addArguments("--headless");
+		driver = new ChromeDriver(chromeOptions);
+		driver.manage().window().maximize();
+		driver.get(url);
+		driver.findElement(By.linkText("Dynamic Loading")).click();
+		driver.findElement(By.linkText("Example 1: Element on page that is hidden")).click();
+		driver.findElement(By.xpath("//button[text()='Start']")).click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//h4[text()='Hello World!']"))));
+		System.out.println(driver.findElement(By.xpath("//h4[text()='Hello World!']")).getText());
+		driver.navigate().back();
+		driver.navigate().back();
+		driver.close();
+
+
+	}
+	
+	
 
 }

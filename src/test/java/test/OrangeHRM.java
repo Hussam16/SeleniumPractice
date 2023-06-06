@@ -85,7 +85,7 @@ public class OrangeHRM {
 
 	@AfterTest
 	public void tearDown() {
-		//driver.quit();
+		driver.quit();
 	}
 
 }

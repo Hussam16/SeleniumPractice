@@ -142,6 +142,7 @@ public class SauceLabstestCases {
 		comboSearch.sendKeys(Keys.ENTER);
 		WebElement submitButton = driver.findElement(By.id("submitbtn"));
 		submitButton.click();
+		driver.close();
 
 	}
 
