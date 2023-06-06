@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -167,6 +169,26 @@ public class HerkoInternetApp {
 		driver.findElement(By.tagName("p")).sendKeys("Loreem sdasd");
 		driver.switchTo().parentFrame();
 		driver.findElement(By.xpath("(//button[@role='menuitem'])[1]")).click();
+
+		driver.close();
+
+
+	}
+	@Test
+	public void HandleDynamicLoading() {
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		// chromeOptions.addArguments("--headless");
+		driver = new ChromeDriver(chromeOptions);
+		driver.manage().window().maximize();
+		driver.get(url);
+		driver.findElement(By.linkText("Dynamic Loading")).click();
+		driver.findElement(By.linkText("Example 1: Element on page that is hidden")).click();
+		driver.findElement(By.xpath("//button[text()='Start']")).click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//h4[text()='Hello World!']"))));
+		System.out.println(driver.findElement(By.xpath("//h4[text()='Hello World!']")).getText());
+
 
 		//driver.close();
 
