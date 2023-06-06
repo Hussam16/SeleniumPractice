@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-05T18:35:01 AST" name="Default suite" finished-at="2023-06-05T18:35:11 AST" duration-ms="10387">
+  <suite started-at="2023-06-06T17:05:50 AST" name="Default suite" finished-at="2023-06-06T17:05:55 AST" duration-ms="5043">
     <groups>
-      <group name="Sanity">
-        <method signature="OrangeHRM.AdminUserMangementTable()[pri:0, instance:test.OrangeHRM@52b1beb6]" name="AdminUserMangementTable" class="test.OrangeHRM"/>
-      </group> <!-- Sanity -->
     </groups>
-    <test started-at="2023-06-05T18:35:01 AST" name="Default test" finished-at="2023-06-05T18:35:11 AST" duration-ms="10387">
-      <class name="test.OrangeHRM">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.OrangeHRM@52b1beb6]" started-at="2023-06-05T18:35:01 AST" name="setup" finished-at="2023-06-05T18:35:09 AST" duration-ms="8405" status="PASS">
+    <test started-at="2023-06-06T17:05:50 AST" name="Default test" finished-at="2023-06-06T17:05:55 AST" duration-ms="5043">
+      <class name="test.HerkoInternetApp">
+        <test-method signature="ClickKeysTestSlider()[pri:0, instance:test.HerkoInternetApp@3ee37e5a]" started-at="2023-06-06T17:05:50 AST" name="ClickKeysTestSlider" finished-at="2023-06-06T17:05:55 AST" duration-ms="5004" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AdminUserMangementTable()[pri:0, instance:test.OrangeHRM@52b1beb6]" started-at="2023-06-05T18:35:09 AST" name="AdminUserMangementTable" finished-at="2023-06-05T18:35:11 AST" duration-ms="1941" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AdminUserMangementTable -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.OrangeHRM@52b1beb6]" started-at="2023-06-05T18:35:11 AST" name="tearDown" finished-at="2023-06-05T18:35:11 AST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test.OrangeHRM -->
+        </test-method> <!-- ClickKeysTestSlider -->
+      </class> <!-- test.HerkoInternetApp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
