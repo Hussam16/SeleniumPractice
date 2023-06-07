@@ -1,241 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="16" failed="2" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-06T21:13:53 AST" name="Suite" finished-at="2023-06-06T21:15:42 AST" duration-ms="109129">
+  <suite started-at="2023-06-07T12:16:45 EET" name="Default suite" finished-at="2023-06-07T12:18:44 EET" duration-ms="118496">
     <groups>
-      <group name="Sanity">
-        <method signature="SauceLabstestCases.demoAutomationSite()[pri:0, instance:test.SauceLabstestCases@434a63ab]" name="demoAutomationSite" class="test.SauceLabstestCases"/>
-        <method signature="SauceLabstestCases.navigateBillingSoftware()[pri:0, instance:test.SauceLabstestCases@434a63ab]" name="navigateBillingSoftware" class="test.SauceLabstestCases"/>
-        <method signature="SauceLabstestCases.navigateSacuceLabsHomepage()[pri:0, instance:test.SauceLabstestCases@434a63ab]" name="navigateSacuceLabsHomepage" class="test.SauceLabstestCases"/>
-        <method signature="SauceLabstestCases.navigateSacuceLabsHomepage3()[pri:0, instance:test.SauceLabstestCases@434a63ab]" name="navigateSacuceLabsHomepage3" class="test.SauceLabstestCases"/>
-        <method signature="OrangeHRM.AdminUserMangementTable()[pri:0, instance:test.OrangeHRM@8f2ef19]" name="AdminUserMangementTable" class="test.OrangeHRM"/>
-      </group> <!-- Sanity -->
-      <group name="Regression">
-        <method signature="SauceLabstestCases.demoAutomationSite()[pri:0, instance:test.SauceLabstestCases@434a63ab]" name="demoAutomationSite" class="test.SauceLabstestCases"/>
-        <method signature="SauceLabstestCases.navigateBillingSoftware()[pri:0, instance:test.SauceLabstestCases@434a63ab]" name="navigateBillingSoftware" class="test.SauceLabstestCases"/>
-        <method signature="SauceLabstestCases.navigateSacuceLabsHomepage2()[pri:0, instance:test.SauceLabstestCases@434a63ab]" name="navigateSacuceLabsHomepage2" class="test.SauceLabstestCases"/>
-        <method signature="SauceLabstestCases.navigateSacuceLabsHomepage3()[pri:0, instance:test.SauceLabstestCases@434a63ab]" name="navigateSacuceLabsHomepage3" class="test.SauceLabstestCases"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-06-06T21:13:53 AST" name="Test2" finished-at="2023-06-06T21:14:01 AST" duration-ms="8893">
-      <class name="test.GoogleHomePagetestCases">
-        <test-method signature="navigateSacuceLabsHomepage()[pri:0, instance:test.GoogleHomePagetestCases@2794eab6]" started-at="2023-06-06T21:13:53 AST" name="navigateSacuceLabsHomepage" finished-at="2023-06-06T21:14:01 AST" duration-ms="8833" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateSacuceLabsHomepage -->
-      </class> <!-- test.GoogleHomePagetestCases -->
-    </test> <!-- Test2 -->
-    <test started-at="2023-06-06T21:13:53 AST" name="Test1" finished-at="2023-06-06T21:15:09 AST" duration-ms="76153">
-      <class name="test.SauceLabstestCases">
-        <test-method signature="NoCommerceHomePage()[pri:0, instance:test.SauceLabstestCases@434a63ab]" started-at="2023-06-06T21:13:53 AST" name="NoCommerceHomePage" finished-at="2023-06-06T21:14:03 AST" duration-ms="10669" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NoCommerceHomePage -->
-        <test-method signature="demoAutomationSite()[pri:0, instance:test.SauceLabstestCases@434a63ab]" started-at="2023-06-06T21:14:03 AST" name="demoAutomationSite" finished-at="2023-06-06T21:14:11 AST" duration-ms="7615" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-labelledby="select2-country-container">...</span> is not clickable at point (472, 643). Other element would receive the click: <iframe id="aswift_2" name="aswift_2" style="width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20230531/r20110914/zrt_lookup.html?fsb=1#RS-1-&amp;adk=1812271801&amp;client=ca-pub-9173866185064071&amp;fa=1&amp;ifi=3&amp;uci=a!3&amp;btvi=1&amp;xpc=Qxs1H8cOck&amp;p=https%3A//demo.automationtesting.in" data-google-container-id="a!3" data-google-query-id="CNuO9OGfr_8CFfHNFgUdpp8BIA" data-load-complete="true"></iframe>
-  (Session info: chrome=114.0.5735.110)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3c6cebd3752af820d0f8360ea236f191, clickElement {id=EF4F4DFE7BED4F7484F6DE5A6E25FE0C_element_65}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52919}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52919/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3c6cebd3752af820d0f8360ea236f191)] -> css selector: span[role='combobox']]
-Session ID: 3c6cebd3752af820d0f8360ea236f191]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-labelledby="select2-country-container">...</span> is not clickable at point (472, 643). Other element would receive the click: <iframe id="aswift_2" name="aswift_2" style="width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20230531/r20110914/zrt_lookup.html?fsb=1#RS-1-&amp;adk=1812271801&amp;client=ca-pub-9173866185064071&amp;fa=1&amp;ifi=3&amp;uci=a!3&amp;btvi=1&amp;xpc=Qxs1H8cOck&amp;p=https%3A//demo.automationtesting.in" data-google-container-id="a!3" data-google-query-id="CNuO9OGfr_8CFfHNFgUdpp8BIA" data-load-complete="true"></iframe>
-  (Session info: chrome=114.0.5735.110)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3c6cebd3752af820d0f8360ea236f191, clickElement {id=EF4F4DFE7BED4F7484F6DE5A6E25FE0C_element_65}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52919}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52919/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3c6cebd3752af820d0f8360ea236f191)] -> css selector: span[role='combobox']]
-Session ID: 3c6cebd3752af820d0f8360ea236f191
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at test.SauceLabstestCases.demoAutomationSite(SauceLabstestCases.java:138)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demoAutomationSite -->
-        <test-method signature="navigateBillingSoftware()[pri:0, instance:test.SauceLabstestCases@434a63ab]" started-at="2023-06-06T21:14:11 AST" name="navigateBillingSoftware" finished-at="2023-06-06T21:14:54 AST" duration-ms="43353" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=114.0.5735.110)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [901232775fce41cd7ecb0b18be9aadab, get {url=http://10.0.61.15:9090/#/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52991}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52991/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 901232775fce41cd7ecb0b18be9aadab]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=114.0.5735.110)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [901232775fce41cd7ecb0b18be9aadab, get {url=http://10.0.61.15:9090/#/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52991}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52991/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 901232775fce41cd7ecb0b18be9aadab
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at test.SauceLabstestCases.navigateBillingSoftware(SauceLabstestCases.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBillingSoftware -->
-        <test-method signature="navigateSacuceLabsHomepage()[pri:0, instance:test.SauceLabstestCases@434a63ab]" started-at="2023-06-06T21:14:54 AST" name="navigateSacuceLabsHomepage" finished-at="2023-06-06T21:15:00 AST" duration-ms="5997" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateSacuceLabsHomepage -->
-        <test-method signature="navigateSacuceLabsHomepage2()[pri:0, instance:test.SauceLabstestCases@434a63ab]" started-at="2023-06-06T21:15:00 AST" name="navigateSacuceLabsHomepage2" finished-at="2023-06-06T21:15:05 AST" duration-ms="4879" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateSacuceLabsHomepage2 -->
-        <test-method signature="navigateSacuceLabsHomepage3()[pri:0, instance:test.SauceLabstestCases@434a63ab]" started-at="2023-06-06T21:15:05 AST" name="navigateSacuceLabsHomepage3" finished-at="2023-06-06T21:15:09 AST" duration-ms="3577" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateSacuceLabsHomepage3 -->
-      </class> <!-- test.SauceLabstestCases -->
-    </test> <!-- Test1 -->
-    <test started-at="2023-06-06T21:15:09 AST" name="Test4" finished-at="2023-06-06T21:15:18 AST" duration-ms="9606">
-      <class name="test.OrangeHRM">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.OrangeHRM@8f2ef19]" started-at="2023-06-06T21:15:09 AST" name="setup" finished-at="2023-06-06T21:15:16 AST" duration-ms="7512" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AdminUserMangementTable()[pri:0, instance:test.OrangeHRM@8f2ef19]" started-at="2023-06-06T21:15:16 AST" name="AdminUserMangementTable" finished-at="2023-06-06T21:15:18 AST" duration-ms="1896" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AdminUserMangementTable -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.OrangeHRM@8f2ef19]" started-at="2023-06-06T21:15:18 AST" name="tearDown" finished-at="2023-06-06T21:15:18 AST" duration-ms="193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test.OrangeHRM -->
-    </test> <!-- Test4 -->
-    <test started-at="2023-06-06T21:14:01 AST" name="Test3" finished-at="2023-06-06T21:15:42 AST" duration-ms="100210">
+    <test started-at="2023-06-07T12:16:45 EET" name="Default test" finished-at="2023-06-07T12:18:44 EET" duration-ms="118496">
       <class name="test.HerkoInternetApp">
-        <test-method signature="ClickKeysTestSlider()[pri:0, instance:test.HerkoInternetApp@63376bed]" started-at="2023-06-06T21:14:01 AST" name="ClickKeysTestSlider" finished-at="2023-06-06T21:14:09 AST" duration-ms="7566" status="PASS">
+        <test-method signature="ClickKeysTestSlider()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:16:45 EET" name="ClickKeysTestSlider" finished-at="2023-06-07T12:16:59 EET" duration-ms="13622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickKeysTestSlider -->
-        <test-method signature="ClickKeysTestcases()[pri:0, instance:test.HerkoInternetApp@63376bed]" started-at="2023-06-06T21:14:09 AST" name="ClickKeysTestcases" finished-at="2023-06-06T21:14:14 AST" duration-ms="4578" status="PASS">
+        <test-method signature="ClickKeysTestcases()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:16:59 EET" name="ClickKeysTestcases" finished-at="2023-06-07T12:17:09 EET" duration-ms="10292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickKeysTestcases -->
-        <test-method signature="HandleAlertTestcases()[pri:0, instance:test.HerkoInternetApp@63376bed]" started-at="2023-06-06T21:14:14 AST" name="HandleAlertTestcases" finished-at="2023-06-06T21:14:18 AST" duration-ms="4302" status="PASS">
+        <test-method signature="HandleAlertTestcases()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:17:09 EET" name="HandleAlertTestcases" finished-at="2023-06-07T12:17:18 EET" duration-ms="8337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HandleAlertTestcases -->
-        <test-method signature="HandleAlertTestcasesSendText()[pri:0, instance:test.HerkoInternetApp@63376bed]" started-at="2023-06-06T21:14:18 AST" name="HandleAlertTestcasesSendText" finished-at="2023-06-06T21:14:22 AST" duration-ms="4140" status="PASS">
+        <test-method signature="HandleAlertTestcasesSendText()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:17:18 EET" name="HandleAlertTestcasesSendText" finished-at="2023-06-07T12:17:30 EET" duration-ms="12167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HandleAlertTestcasesSendText -->
-        <test-method signature="HandleAlertTestcasesTwoChocic()[pri:0, instance:test.HerkoInternetApp@63376bed]" started-at="2023-06-06T21:14:22 AST" name="HandleAlertTestcasesTwoChocic" finished-at="2023-06-06T21:14:39 AST" duration-ms="16728" status="PASS">
+        <test-method signature="HandleAlertTestcasesTwoChocic()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:17:30 EET" name="HandleAlertTestcasesTwoChocic" finished-at="2023-06-07T12:17:42 EET" duration-ms="11809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HandleAlertTestcasesTwoChocic -->
-        <test-method signature="HandleAlertTestcasesTwoPromot()[pri:0, instance:test.HerkoInternetApp@63376bed]" started-at="2023-06-06T21:14:39 AST" name="HandleAlertTestcasesTwoPromot" finished-at="2023-06-06T21:14:50 AST" duration-ms="11401" status="PASS">
+        <test-method signature="HandleAlertTestcasesTwoPromot()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:17:42 EET" name="HandleAlertTestcasesTwoPromot" finished-at="2023-06-07T12:17:49 EET" duration-ms="7362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HandleAlertTestcasesTwoPromot -->
-        <test-method signature="HandleDynamicLoading()[pri:0, instance:test.HerkoInternetApp@63376bed]" started-at="2023-06-06T21:14:50 AST" name="HandleDynamicLoading" finished-at="2023-06-06T21:15:06 AST" duration-ms="16215" status="PASS">
+        <test-method signature="HandleDynamicLoading()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:17:49 EET" name="HandleDynamicLoading" finished-at="2023-06-07T12:18:04 EET" duration-ms="15572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HandleDynamicLoading -->
-        <test-method signature="HandleFileUpload()[pri:0, instance:test.HerkoInternetApp@63376bed]" started-at="2023-06-06T21:15:06 AST" name="HandleFileUpload" finished-at="2023-06-06T21:15:16 AST" duration-ms="9625" status="PASS">
+        <test-method signature="HandleFileUpload()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:18:04 EET" name="HandleFileUpload" finished-at="2023-06-07T12:18:15 EET" duration-ms="10326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HandleFileUpload -->
-        <test-method signature="HandleFrameSwitching()[pri:0, instance:test.HerkoInternetApp@63376bed]" started-at="2023-06-06T21:15:16 AST" name="HandleFrameSwitching" finished-at="2023-06-06T21:15:29 AST" duration-ms="12986" status="PASS">
+        <test-method signature="HandleFrameSwitching()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:18:15 EET" name="HandleFrameSwitching" finished-at="2023-06-07T12:18:29 EET" duration-ms="13779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HandleFrameSwitching -->
-        <test-method signature="HandleNavgation()[pri:0, instance:test.HerkoInternetApp@63376bed]" started-at="2023-06-06T21:15:29 AST" name="HandleNavgation" finished-at="2023-06-06T21:15:42 AST" duration-ms="12631" status="PASS">
+        <test-method signature="HandleNavgation()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:18:29 EET" name="HandleNavgation" finished-at="2023-06-07T12:18:44 EET" duration-ms="15146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HandleNavgation -->
       </class> <!-- test.HerkoInternetApp -->
-    </test> <!-- Test3 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
