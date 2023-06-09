@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-07T12:16:45 EET" name="Default suite" finished-at="2023-06-07T12:18:44 EET" duration-ms="118496">
+  <suite started-at="2023-06-09T18:38:46 AST" name="Default suite" finished-at="2023-06-09T18:39:05 AST" duration-ms="19669">
     <groups>
     </groups>
-    <test started-at="2023-06-07T12:16:45 EET" name="Default test" finished-at="2023-06-07T12:18:44 EET" duration-ms="118496">
-      <class name="test.HerkoInternetApp">
-        <test-method signature="ClickKeysTestSlider()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:16:45 EET" name="ClickKeysTestSlider" finished-at="2023-06-07T12:16:59 EET" duration-ms="13622" status="PASS">
+    <test started-at="2023-06-09T18:38:46 AST" name="Default test" finished-at="2023-06-09T18:39:05 AST" duration-ms="19669">
+      <class name="test.OrangeHRMTestCases">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:test.OrangeHRMTestCases@273e7444]" started-at="2023-06-09T18:38:46 AST" name="Setup" finished-at="2023-06-09T18:38:53 AST" duration-ms="7243" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickKeysTestSlider -->
-        <test-method signature="ClickKeysTestcases()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:16:59 EET" name="ClickKeysTestcases" finished-at="2023-06-07T12:17:09 EET" duration-ms="10292" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method signature="navigationTestcases()[pri:0, instance:test.OrangeHRMTestCases@273e7444]" started-at="2023-06-09T18:38:53 AST" name="navigationTestcases" finished-at="2023-06-09T18:39:04 AST" duration-ms="11196" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickKeysTestcases -->
-        <test-method signature="HandleAlertTestcases()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:17:09 EET" name="HandleAlertTestcases" finished-at="2023-06-07T12:17:18 EET" duration-ms="8337" status="PASS">
+        </test-method> <!-- navigationTestcases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.OrangeHRMTestCases@273e7444]" started-at="2023-06-09T18:39:04 AST" name="tearDown" finished-at="2023-06-09T18:39:05 AST" duration-ms="1183" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HandleAlertTestcases -->
-        <test-method signature="HandleAlertTestcasesSendText()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:17:18 EET" name="HandleAlertTestcasesSendText" finished-at="2023-06-07T12:17:30 EET" duration-ms="12167" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HandleAlertTestcasesSendText -->
-        <test-method signature="HandleAlertTestcasesTwoChocic()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:17:30 EET" name="HandleAlertTestcasesTwoChocic" finished-at="2023-06-07T12:17:42 EET" duration-ms="11809" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HandleAlertTestcasesTwoChocic -->
-        <test-method signature="HandleAlertTestcasesTwoPromot()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:17:42 EET" name="HandleAlertTestcasesTwoPromot" finished-at="2023-06-07T12:17:49 EET" duration-ms="7362" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HandleAlertTestcasesTwoPromot -->
-        <test-method signature="HandleDynamicLoading()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:17:49 EET" name="HandleDynamicLoading" finished-at="2023-06-07T12:18:04 EET" duration-ms="15572" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HandleDynamicLoading -->
-        <test-method signature="HandleFileUpload()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:18:04 EET" name="HandleFileUpload" finished-at="2023-06-07T12:18:15 EET" duration-ms="10326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HandleFileUpload -->
-        <test-method signature="HandleFrameSwitching()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:18:15 EET" name="HandleFrameSwitching" finished-at="2023-06-07T12:18:29 EET" duration-ms="13779" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HandleFrameSwitching -->
-        <test-method signature="HandleNavgation()[pri:0, instance:test.HerkoInternetApp@47af7f3d]" started-at="2023-06-07T12:18:29 EET" name="HandleNavgation" finished-at="2023-06-07T12:18:44 EET" duration-ms="15146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HandleNavgation -->
-      </class> <!-- test.HerkoInternetApp -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.OrangeHRMTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
