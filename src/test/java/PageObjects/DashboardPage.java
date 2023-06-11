@@ -18,8 +18,9 @@ public class DashboardPage {
 
 	}
 
-	public void navigateToPage(String pageName) {
+	public UserManagmentPage navigateToPage(String pageName) {
 		driver.findElement(By.linkText(pageName)).click();
+		return new UserManagmentPage(driver);
 	}
 
 	public String getCurrentUrl() {

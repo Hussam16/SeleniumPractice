@@ -5,9 +5,9 @@
     <classes>
       <class name="test.OrangeHRMTestCases">
         <methods>
-          <include name="tearDown"/>
           <include name="Setup"/>
-          <include name="navigationTestcases"/>
+          <include name="tearDown"/>
+          <include name="createNewUserAccount"/>
         </methods>
       </class> <!-- test.OrangeHRMTestCases -->
     </classes>
